@@ -17,3 +17,4 @@
 * Consiste no consumo de uma API de filmes;
 * Mostra ao usuário os melhores 250 filmes, segundo a classificação do IMDB.
 * Obs: Posteriormente será postado os repostitórios das outras aulas, até mais 😉.
+* Novidades
