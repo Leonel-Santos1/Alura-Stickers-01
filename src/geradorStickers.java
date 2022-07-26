@@ -2,10 +2,11 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 
 public class geradorStickers {
-    public void geraStickers(InputStream inputStream, String nomeArquivo) throws Exception {
+    public void geraStickers(InputStream inputStream, String nomeArquivo, String frase) throws Exception {
 
         BufferedImage imagemOriginal = ImageIO.read(inputStream);
 
@@ -20,12 +21,12 @@ public class geradorStickers {
         graphics.drawImage(imagemOriginal, 0, 0, null);
 
         //Configuração da fonte
-        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 62);
+        var fonte = new Font("Comic Sans MC", Font.BOLD, 62);
         graphics.setColor(Color.RED);
         graphics.setFont(fonte);
 
         //escrever uma legenda na nova imagem
-        graphics.drawString("Onze rainha, lenda e dona de tudo!!!", 10, novaAltura - 100);
+        graphics.drawString(frase, 200, novaAltura - 100);
 
         //escrever a nova imagem no arquivo
         File diretorio = new File("saida/" + nomeArquivo);

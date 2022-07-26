@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         var gerador = new geradorStickers();
+        String frase;
 
         //Realizar a conexão HTTP e buscar os top 250 filmes
 
@@ -49,13 +50,22 @@ public class Main {
 
             String nomeArquivo = titulo + ".png";
             InputStream inputStream = new URL(urlImage).openStream();
-            gerador.geraStickers(inputStream, nomeArquivo);
 
             System.out.println("\u001b[3m" + "Classificação: " + filme.get("imDbRating") + ANSI_RESET);
 
             double notaDouble = Double.parseDouble(filme.get("imDbRating"));
 
             int notaInt = (int) notaDouble;
+
+            if (notaInt >= 8) {
+                frase = "Assista imediatamente!";
+            } else if ((notaInt <= 7) || (notaInt > 6)) {
+                frase = "É interessante.";
+            } else {
+                frase = "Você que sabe...";
+            }
+
+            gerador.geraStickers(inputStream, nomeArquivo, frase);
 
             for (int i = 0; i < notaInt; i++) {
                 System.out.print("⭐️");
