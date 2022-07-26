@@ -2,7 +2,7 @@
 
 <h1 align="center"> Imersão dev Java - Alura <br/> Aula 1: Consumindo uma API de filmes com java</h1>
 
-## Descrição do projeto 📝
+## Descrição Aula 1 📝
 
 * Consiste no consumo de uma API de filmes;
 * Mostra ao usuário os melhores 250 filmes, segundo a classificação do IMDB.
@@ -18,7 +18,7 @@
 
 <h1 align="center"> Aula 2: Consumindo uma API de filmes e fazendo figurinhas</h1>
 
-## Descrição do projeto 📝
+## Descrição Aula 2 📝
 
 * Agora é possível trabalhar com imagens e brincar um pouco com elas;
 * Na última aula, eram apenas os seus links(urls), na aula 2, isso já é diferente;
