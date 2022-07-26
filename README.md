@@ -1,7 +1,6 @@
-
-<h1 align="center"> Imersão dev Java - Alura <br/> Aula 1: Consumindo uma API de filmes com java</h1>
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 
+<h1 align="center"> Imersão dev Java - Alura <br/> Aula 1: Consumindo uma API de filmes com java</h1>
 
 ## Descrição do projeto 📝
 
@@ -12,6 +11,8 @@
 
 - `Funcionalidade 1`: Comunicação utilizando as bibliotecas de java: java.net.http;
 - `Funcionalidade 2`: Convesão de String Json para java.
+
+<h1></h1>
 
 <br/>
 
